@@ -11,4 +11,9 @@
     <string name="manage_medications_col3">Ingestão</string>
     <string name="manage_medications_col4">Fabricante</string>
     <string name="click_to_update">* Clique na linha que deseja editar.</string>
+    <string-array name="default_person_search_entries">
+        <item>CPF</item>
+        <item>E-mail</item>
+        <item>ID</item>
+    </string-array>
 </resources>
