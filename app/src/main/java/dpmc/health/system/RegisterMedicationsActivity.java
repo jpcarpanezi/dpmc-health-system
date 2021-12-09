@@ -94,23 +94,20 @@ public class RegisterMedicationsActivity extends AppCompatActivity {
         call.enqueue(new Callback<RegisterMedicines>() {
             @Override
             public void onResponse(Call<RegisterMedicines> call, Response<RegisterMedicines> response) {
-                switch (response.code()) {
-                    case 201:
-                        drugName.setText(null);
-                        activeIngredient.setText(null);
-                        formRoute.setText(null);
-                        company.setText(null);
+                if (response.code() == 201) {
+                    drugName.setText(null);
+                    activeIngredient.setText(null);
+                    formRoute.setText(null);
+                    company.setText(null);
 
-                        InputMethodManager imm = (InputMethodManager)getSystemService(INPUT_METHOD_SERVICE);
-                        imm.hideSoftInputFromWindow(getCurrentFocus().getWindowToken(), 0);
+                    InputMethodManager imm = (InputMethodManager) getSystemService(INPUT_METHOD_SERVICE);
+                    imm.hideSoftInputFromWindow(getCurrentFocus().getWindowToken(), 0);
 
-                        Toast successToast = Toast.makeText(getApplicationContext(), "Cadastrado com sucesso", Toast.LENGTH_LONG);
-                        successToast.show();
-                        break;
-                    default:
-                        Toast failureToast = Toast.makeText(getApplicationContext(), "Ocorreu um erro", Toast.LENGTH_LONG);
-                        failureToast.show();
-                        break;
+                    Toast successToast = Toast.makeText(getApplicationContext(), "Cadastrado com sucesso", Toast.LENGTH_LONG);
+                    successToast.show();
+                } else {
+                    Toast failureToast = Toast.makeText(getApplicationContext(), "Ocorreu um erro", Toast.LENGTH_LONG);
+                    failureToast.show();
                 }
             }
 
