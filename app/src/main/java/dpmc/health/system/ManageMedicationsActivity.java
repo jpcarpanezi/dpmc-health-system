@@ -3,28 +3,10 @@ package dpmc.health.system;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
-import android.text.TextUtils;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.Button;
-import android.widget.LinearLayout;
-import android.widget.TableLayout;
-import android.widget.TableRow;
-import android.widget.TextView;
 
 import com.evrencoskun.tableview.TableView;
 
-import java.io.BufferedInputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
-import java.net.URL;
-import java.util.List;
-
-import dpmc.health.system.interfaces.ManageMedicationsClient;
-import dpmc.health.system.models.MedicinesContent;
+import dpmc.health.system.interfaces.MedicationsClient;
 import dpmc.health.system.models.MedicinesPaginatedView;
 import okhttp3.OkHttpClient;
 import retrofit2.Call;
@@ -34,7 +16,7 @@ import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 public class ManageMedicationsActivity extends AppCompatActivity {
-    private ManageMedicationsClient client;
+    private MedicationsClient client;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -62,7 +44,7 @@ public class ManageMedicationsActivity extends AppCompatActivity {
                         .client(httpClient.build())
                         .build();
 
-        this.client =  retrofit.create(ManageMedicationsClient.class);
+        this.client =  retrofit.create(MedicationsClient.class);
     }
 
     public void getMedications() {

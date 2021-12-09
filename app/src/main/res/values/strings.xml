@@ -6,4 +6,8 @@
     <string name="title_consult_patients">Consultar Pacientes</string>
     <string name="title_register_medications">Cadastrar Medicamentos</string>
     <string name="title_manage_medications">Gerenciar Medicamentos</string>
+    <string name="manage_medications_col1">Nome</string>
+    <string name="manage_medications_col2">Princípio</string>
+    <string name="manage_medications_col3">Ingestão</string>
+    <string name="manage_medications_col4">Fabricante</string>
 </resources>
