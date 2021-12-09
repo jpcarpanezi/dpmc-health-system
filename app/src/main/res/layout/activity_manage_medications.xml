@@ -6,79 +6,79 @@
     android:layout_height="match_parent"
     tools:context=".ManageMedicationsActivity">
 
-    <com.evrencoskun.tableview.TableView
-        android:id="@+id/tableView"
+    <TableLayout
+        android:id="@+id/manageMedicationsTable"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="676dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@android:color/white"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow android:background="@color/redStiletto">
+
+            <TextView
+                android:id="@+id/nameHeader"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="4"
+                android:ellipsize="end"
+                android:padding="10sp"
+                android:singleLine="true"
+                android:text="@string/manage_medications_col1"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="4"
+                android:ellipsize="end"
+                android:padding="10sp"
+                android:singleLine="true"
+                android:text="@string/manage_medications_col2"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="4"
+                android:ellipsize="end"
+                android:padding="10sp"
+                android:singleLine="true"
+                android:text="@string/manage_medications_col3"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="4"
+                android:ellipsize="end"
+                android:padding="10sp"
+                android:singleLine="true"
+                android:text="@string/manage_medications_col4"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:textSize="14sp" />
+        </TableRow>
+
+    </TableLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/click_to_update"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-<!--    <HorizontalScrollView-->
-<!--        android:layout_width="fill_parent"-->
-<!--        android:layout_height="fill_parent"-->
-<!--        app:layout_constraintBottom_toBottomOf="parent"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toTopOf="parent"-->
-<!--        android:contentDescription="@string/app_name">-->
-
-<!--        <TableLayout-->
-<!--            android:id="@+id/manageMedicationsTable"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:stretchColumns="*"-->
-<!--            android:shrinkColumns="1dp">-->
-
-<!--            <TableRow-->
-<!--                android:id="@+id/manageMedicationsHeader"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:layout_margin="5dp">-->
-
-<!--                <TextView-->
-<!--                    android:id="@+id/actionsHeader"-->
-<!--                    android:layout_width="0dp"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:layout_weight="1"-->
-<!--                    android:text="Ações"-->
-<!--                    android:textStyle="bold" />-->
-
-<!--                <TextView-->
-<!--                    android:id="@+id/nameHeader"-->
-<!--                    android:layout_width="0dp"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:layout_weight="1"-->
-<!--                    android:text="Nome"-->
-<!--                    android:textStyle="bold" />-->
-
-<!--                <TextView-->
-<!--                    android:id="@+id/activeIngredientHeader"-->
-<!--                    android:layout_width="0dp"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:layout_weight="1"-->
-<!--                    android:text="Princípio"-->
-<!--                    android:textStyle="bold" />-->
-
-<!--                <TextView-->
-<!--                    android:id="@+id/formRouteHeader"-->
-<!--                    android:layout_width="0dp"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:layout_weight="1"-->
-<!--                    android:text="Ingestão"-->
-<!--                    android:textStyle="bold" />-->
-
-<!--                <TextView-->
-<!--                    android:id="@+id/manufacturerHeader"-->
-<!--                    android:layout_width="0dp"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:layout_weight="1"-->
-<!--                    android:text="Fabricante"-->
-<!--                    android:textStyle="bold" />-->
-
-<!--            </TableRow>-->
-<!--        </TableLayout>-->
-<!--    </HorizontalScrollView>-->
+        app:layout_constraintTop_toBottomOf="@+id/manageMedicationsTable" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

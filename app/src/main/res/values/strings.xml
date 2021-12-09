@@ -10,4 +10,5 @@
     <string name="manage_medications_col2">Princípio</string>
     <string name="manage_medications_col3">Ingestão</string>
     <string name="manage_medications_col4">Fabricante</string>
+    <string name="click_to_update">* Clique na linha que deseja editar.</string>
 </resources>
