@@ -9,4 +9,6 @@
     <color name="white">#FFFFFFFF</color>
     <color name="blackGraphite">#212529</color>
     <color name="blackGraphiteLow">#3F474F</color>
+    <color name="redStiletto">#9F3535</color>
+    <color name="tableOdd">#F2F2F2</color>
 </resources>
