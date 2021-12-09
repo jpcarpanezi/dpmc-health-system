@@ -13,4 +13,5 @@ public class RegisterPatientsActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setTitle(R.string.title_register_patients);
     }
+
 }
