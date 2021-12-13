@@ -1,6 +1,6 @@
 # Desenvolvimento para Plataforma Móvel (Unified Health System)
 
-<p align="center"><img src="https://github.com/jpcarpanezi/dpmc-health-system/blob/master/app/src/main/res/drawable/logo.png" width="250px"></p>
+<p align="center"><img src="https://github.com/jpcarpanezi/dpmc-health-system/blob/master/app/src/main/res/drawable/logo_android.png" width="250px"></p>
 
 Este repositório trata-se de um trabalho de **Desenvolvimento para Plataforma Móvel (DPMC6)** do **Instituto Federal de Ciências e Tecnologia de São Paulo (IFSP) - Campus Piracicaba**. Este grupo composto pelos integrantes Geanluca Sampaio de Sousa, Isabelle Caroline de Carvalho Costa, João Pedro Carpanezi dos Santos, Mateus Monteiro Siste e Murilo Azevedo Jacon. O projeto foi desenvolvido como um complemento do <a href="https://github.com/jpcarpanezi/dooc-health-system" target="_blank">dooc-health-system</a>, consumindo os endpoints da APIs Restful criada em Java com a proposta de um sistema unificado de saúde para todo país, em um aplicativo nativo para Android.
 
