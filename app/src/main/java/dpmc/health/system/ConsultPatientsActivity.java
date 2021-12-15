@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.text.InputType;
+import android.text.TextWatcher;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.AdapterView;
@@ -27,6 +28,8 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class ConsultPatientsActivity extends AppCompatActivity {
     private PersonClient client;
+
+    private TextWatcher textWatcher = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,14 +55,27 @@ public class ConsultPatientsActivity extends AppCompatActivity {
                     case "CPF":
                         text.setInputType(InputType.TYPE_NUMBER_FLAG_DECIMAL);
                         text.setHint("CPF do usuário");
+                        
+                        textWatcher = MaskUtils.insert(text, MaskType.CPF);
+                        text.addTextChangedListener(textWatcher);
                         break;
                     case "E-mail":
                         text.setInputType(InputType.TYPE_TEXT_VARIATION_EMAIL_ADDRESS);
                         text.setHint("E-mail do usuário");
+
+                        if (textWatcher != null) {
+                            text.removeTextChangedListener(textWatcher);
+                            textWatcher = null;
+                        }
                         break;
                     case "ID":
                         text.setInputType(InputType.TYPE_CLASS_NUMBER);
                         text.setHint("ID do usuário");
+
+                        if (textWatcher != null) {
+                            text.removeTextChangedListener(textWatcher);
+                            textWatcher = null;
+                        }
                         break;
                 }
             }
