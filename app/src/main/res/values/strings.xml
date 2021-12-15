@@ -16,4 +16,12 @@
         <item>E-mail</item>
         <item>ID</item>
     </string-array>
+    <string name="person_name">Nome: %1$s</string>
+    <string name="person_birth_date">Data de Nascimento: %1$s</string>
+    <string name="person_email">E-mail: %1$s</string>
+    <string name="person_phone">Telefone: %1$s</string>
+    <string name="person_blood_type">Tipo Sanguíneo: %1$s</string>
+    <string name="person_medical_conditions">Condições Médicas: %1$s</string>
+    <string name="person_allergies">Alergias: %1$s</string>
+    <string name="person_comments">Observações: %1$s</string>
 </resources>
